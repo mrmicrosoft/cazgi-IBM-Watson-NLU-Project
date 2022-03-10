@@ -25,9 +25,9 @@ function getNLUInstance() {
     const naturalLanguageUnderstanding = new NaturalLanguageUnderstandingV1({
         version: '2021-08-01',
         authenticator: new IamAuthenticator ({
-            apikey:'nBXVuMUNUt86yIEyJjZP673U02luEMVrfCGDEqxxnuuM'
+            apikey:api_key
         }),
-        serviceUrl:'https://api.eu-gb.natural-language-understanding.watson.cloud.ibm.com/instances/e0767251-0325-4113-8bcc-75b8c56fc430'
+        serviceUrl:api_url
     });
     return naturalLanguageUnderstanding;
 }
